@@ -63,4 +63,11 @@ public class TestRPN1 {
 		RPNCalculator obj = new RPNCalculator();
 		Assert.assertEquals(3628800, obj.Calculate(expresion4));
 	}
+	
+	@Test
+	public void TestCase9(){
+		String expresion4 = "4,!";
+		RPNCalculator obj = new RPNCalculator();
+		Assert.assertEquals(24, obj.Calculate(expresion4));
+	}
 }
